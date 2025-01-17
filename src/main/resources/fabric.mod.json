@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "lillygrovefix",
+	"version": "${version}",
+	"name": "LillyGroveFix",
+	"description": "This is a mod to fix certain issues in the LillyGrove SMP such as creative flight disappearing",
+	"authors": [
+		"Displeasantry/Gerben"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/lillygrovefix/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.gerben.lillygrovefix.LillyGroveFix"
+		],
+		"client": [
+			"net.gerben.lillygrovefix.LillyGroveFixClient"
+		],
+		"fabric-datagen": [
+			"net.gerben.lillygrovefix.LillyGroveFixDataGenerator"
+		]
+	},
+	"mixins": [
+		"lillygrovefix.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
