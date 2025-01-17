@@ -7,22 +7,12 @@
 	"authors": [
 		"Displeasantry/Gerben"
 	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
 	"license": "MIT",
 	"icon": "assets/lillygrovefix/icon.png",
-	"environment": "*",
+	"environment": "client",
 	"entrypoints": {
-		"main": [
-			"net.gerben.lillygrovefix.LillyGroveFix"
-		],
 		"client": [
-			"net.gerben.lillygrovefix.LillyGroveFixClient"
-		],
-		"fabric-datagen": [
-			"net.gerben.lillygrovefix.LillyGroveFixDataGenerator"
+			"net.gerben.lillygrovefix.LillyGroveFix"
 		]
 	},
 	"mixins": [
@@ -36,5 +26,8 @@
 	},
 	"suggests": {
 		"another-mod": "*"
+	},
+	"after": {
+		"fabric-api": "*"
 	}
 }
